@@ -90,58 +90,75 @@ p {
 
 /* commande */
 
+/* Style pour le fond vert */
+#lexique {
+  background-color: #326238; /* Couleur verte (vous pouvez changer la couleur en utilisant le code de couleur de votre choix) */
+  padding: 20px; /* Espace intérieur pour le contenu */
+}
+
+/* Style pour le titre */
 #lexique h1 {
-   text-align: center;
-   font-size: 40px;
+  font-size: 24px; /* Taille de la police du titre */
+  color: #ffffff; /* Couleur du texte (blanc dans cet exemple) */
 }
 
-#lexique > section {
-   max-width: 1200px;
-   margin: auto;
+/* Style pour les blocs de contenu */
+#lexique section {
+  background-color: #326238; /* Couleur de fond des blocs de contenu (blanc dans cet exemple) */
+  padding: 20px; /* Espace intérieur pour les blocs de contenu */
+  margin-bottom: 20px; /* Espace entre les blocs de contenu */
 }
 
+/* Style pour les mots cliquables */
 #lexique .mot {
-   border: 1px solid grey;
-   border-radius: 20px;
-   margin: 0 20px 20px 20px;
-   overflow: hidden;
-   cursor: pointer;
+  cursor: pointer; /* Curseur de la souris en forme de main pour indiquer que les mots sont cliquables */
 }
 
-#lexique .mot .down {
-   display: inline-block;
+/* Style pour les mots ouverts */
+#lexique .mot.open {
+  font-weight: bold; /* Texte en gras pour les mots ouverts */
+  color: #ff0000; /* Couleur du texte pour les mots ouverts (rouge dans cet exemple) */
 }
 
-#lexique .mot .up {
-   display: none;
+/* Styles pour la page "Nous rencontrer" */
+
+/* Style de l'en-tête (h1) */
+main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #D2776A; /* Couleur du texte */
 }
 
-#lexique .mot.open .down {
-   display: none;
+main h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #326238; /* Couleur du texte */
+}
+/* Style de la section */
+section {
+  padding: 20px;
+  background-color: #E3D9D0; /* Couleur de fond principale */
+  text-align: center; /* Centrer le contenu dans la section */
 }
 
-#lexique .mot.open .up {
-   display: inline-block;
+/* Styles pour les mots du lexique */
+#lexique {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#lexique .mot .titre {
-   padding: 10px 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   background: #c8d6cf;
-   font-size: 20px;
-   font-weight: bold;
+.mot {
+  flex: 0 0 50%; /* Pour deux mots par ligne, ajustez selon vos besoins */
+  padding: 10px;
+  margin: 5px;
+  background-color: #ddd; /* Couleur de fond des mots */
+  text-align: center;
+  cursor: pointer;
 }
 
-#lexique .mot .definition {
-   padding: 10px 20px;
-   display: none;
-}
-
-#lexique .mot.open .definition {
-   padding: 10px 20px;
-   display: block;
-   background: #F4CA52;
+.mot.open {
+  background-color: #E3D9D0; /* Couleur de fond lorsque le mot est ouvert */
+  color: #fff; /* Couleur du texte lorsque le mot est ouvert */
 }
