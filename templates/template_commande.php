@@ -13,7 +13,7 @@ $definitions= array(
         
     ),
     array(
-        'titre' => 'franboise',
+        'titre' => 'fraise',
         
     ),
      array(
