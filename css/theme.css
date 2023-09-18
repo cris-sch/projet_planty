@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'syne', sans-serif;
 }
 /* On applique un gris plus clair sur les paragraphes */
 p {
@@ -90,57 +90,56 @@ p {
 
 /* commande */
 
-/* Style pour le fond vert */
 #lexique {
-  background-color: #326238; /* Couleur verte (vous pouvez changer la couleur en utilisant le code de couleur de votre choix) */
-  padding: 20px; /* Espace intérieur pour le contenu */
+  background-color: #326238; 
+  padding: 20px; 
 }
 
-/* Style pour le titre */
+
 #lexique h1 {
-  font-size: 24px; /* Taille de la police du titre */
-  color: #ffffff; /* Couleur du texte (blanc dans cet exemple) */
+  font-size: 24px; 
+  color: #ffffff; 
 }
 
-/* Style pour les blocs de contenu */
+
 #lexique section {
-  background-color: #326238; /* Couleur de fond des blocs de contenu (blanc dans cet exemple) */
-  padding: 20px; /* Espace intérieur pour les blocs de contenu */
-  margin-bottom: 20px; /* Espace entre les blocs de contenu */
+  background-color: #326238; 
+  padding: 20px; 
+  margin-bottom: 20px; 
 }
 
-/* Style pour les mots cliquables */
+
 #lexique .mot {
-  cursor: pointer; /* Curseur de la souris en forme de main pour indiquer que les mots sont cliquables */
+  cursor: pointer; 
 }
 
-/* Style pour les mots ouverts */
+
 #lexique .mot.open {
-  font-weight: bold; /* Texte en gras pour les mots ouverts */
-  color: #ff0000; /* Couleur du texte pour les mots ouverts (rouge dans cet exemple) */
+  font-weight: bold; 
+  color: #ff0000;
 }
 
 /* Styles pour la page "Nous rencontrer" */
 
-/* Style de l'en-tête (h1) */
+
 main h1 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
-  color: #D2776A; /* Couleur du texte */
+  color: #D2776A; 
 }
 
 main h2 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
-  color: #326238; /* Couleur du texte */
+  color: #326238; 
 }
-/* Style de la section */
+
 section {
   padding: 20px;
-  background-color: #E3D9D0; /* Couleur de fond principale */
-  text-align: center; /* Centrer le contenu dans la section */
+  background-color: #E3D9D0; 
+  text-align: center; 
 }
 
 /* Styles pour les mots du lexique */
@@ -150,15 +149,15 @@ section {
 }
 
 .mot {
-  flex: 0 0 50%; /* Pour deux mots par ligne, ajustez selon vos besoins */
+  flex: 0 0 50%; 
   padding: 10px;
   margin: 5px;
-  background-color: #ddd; /* Couleur de fond des mots */
+  background-color: #ddd; 
   text-align: center;
   cursor: pointer;
 }
 
 .mot.open {
-  background-color: #E3D9D0; /* Couleur de fond lorsque le mot est ouvert */
-  color: #fff; /* Couleur du texte lorsque le mot est ouvert */
+  background-color: #E3D9D0; 
+  color: #fff; 
 }
